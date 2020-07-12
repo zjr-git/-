@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+        // var obj1 = { name: '张三' };
+        // var obj2 = { age: 18 };
+        // var obj3 = {
+        //     say: function () {
+        //         console.log('说话');
+        //     }
+        // }
+        // console.log(Object.assign(obj1, obj2, obj3));
+        // console.log(obj1, obj2); 
+        //对象的拼接
+
+
+        // var obj = { name: '张三', age: 20 };
+        // var newObj = Object.assign({}, obj);
+        // console.log(newObj);
+        //对象拷贝
+
+
+        // console.log(Object.is(+0, -0));             
+        // console.log(Object.is(NaN, NaN));
+        //判断值是否相同
+
+
+
+        // function a() {
+        // }
+        // var b = new a();
+        // console.log(a.prototype.isPrototypeOf(b));
+        //确定一个对象是否在另一个对象的原型链中
+
+
+
+        // var obj = { name: '张三', age: 18 };
+        // Object.freeze(obj)
+        // obj.name = '李四';
+        // obj.sex = '男';
+        // console.log(obj)
+        //阻止修改现有的特性和值，并阻止添加新属性
+
+
+        // var obj = {
+        //     name: '小米',
+        //     age: 18,
+        //     say: function () {
+        //         console.log('你好');
+        //     }
+        // }
+        // for (var i in obj) {
+        //     console.log(obj[i]);
+        // }
+        //遍历自身和基础的可枚举属性
+
+
+        // var arr = ["a", "b", "c"];
+        // console.log(Object.getOwnPropertyNames(arr));
+
+
+        // var arr = ["a", "b", "c"];
+        // console.log(Object.getOwnPropertySymbols(arr));
+
+
+        // var arr = ["a", "b", "c"];
+        // console.log(Reflect.ownKeys(arr));
+
+
+        // var obj = { name: 'zhangsan', age: 20 };
+        // console.log(Object.values(obj));
+
+
+
+
+        //var x=-60;
+        // var y=Math.sin(x);
+        //var y=Math.sqrt(x);
+        //var y=Math.abs(x);//绝对值
+        //console.log(x.toFixed(5));指定小数位数的数字
+
+
+        //var arr = [23, 4, 651, 461, 1231, 411];
+        //var maxArr = Math.max(...arr);    
+        //var minArr = Math.min(...arr);
+        //console.log(maxArr,minArr);
+
+
+        // var str="hello world";
+        // var a= '   aa   bb   '
+        // var n =str.charAt(3);    //第3个是哪个字母
+        // var n =str.charCodeAt(3);      //转换acscll
+        // var n=String.fromCharCode(95); //数字转字母
+        // var n=str.indexOf('a'); 
+        // var n=str.indexOf('o'); //位置
+        // var n=str.lastIndexOf('w'); //倒叙找位置
+        // var n=str.replace('o','a');  //把o换成a
+        // var n=str.slice(2,3);//截取第2个
+        // var n=str.substr(3,6);//截取字符串 从第三个截取 截取6个
+        // console.log(str.split('o'));  //从o分割开来
+        // var n=str.toLocaleLowerCase();//转化为小写
+        // var n=str.toLocaleUpperCase();//转化为大写
+        //console.log(a);//去除空格
+        //var n=str.concat('a','b','c');//连接字符串
+        //var n=JSON.parse('asasa');//
+        // console.log(n);
+
+
+
+
+
+        var n = [12, 21, 31, 311, 10];
+        //n.push(10);//末尾追加元素
+        //n.unshift(10);//开头追加元素
+        //n.pop();//删除末尾元素
+        //n.shift();//删除第一个元素
+        //n.splice(0,2,3);//从0开始删除2个追加数字3
+        //n.join("+");//用/将数组隔开 不改变原数组的值
+        //n.slice(1,1);//截取数组 不改变数组的值 返回值是截取到的数组
+        //console.log(n.indexOf(21));//查找数字21在数组中的位置
+        //console.log(n.lastIndexOf(21));//倒叙查找21在数组中的位置
+        //console.log(n);
+
+        // n.sort(function(a,b){
+        //     return a-b;
+        // })
+        // console.log(n)//正序排序
+
+        // n.forEach(function (value, index) {
+        //     console.log(index, value)
+        // })//遍历数组
+
+        // var newArr = n.filter(function (value, index) {
+        //     return value > 100;       
+        // })
+        // console.log(newArr);//过滤数组中大于100的数字
+
+        // var end = n.map(function (value, index) {
+        //     return value * 2;        //将数组中的所有元素都乘以2返回
+        // });
+        // console.log(end);
+
+        // var end = n.some(function (value, index) {
+        //     return value < 500;
+        // });
+        // console.log(end);//根据回调函数的判断条件来选择真假只要有一个回调函数返回值是true，最终some结果是true；
+
+        // var end = n.every(function (value, index) {
+        //     return value < 500;
+        // });
+        // console.log(end);//只要有一个回调函数返回值是false，最终every结果是false；
+
+
+        // console.log(n.reverse());
+        // console.log(n);//倒叙输出
+
+
+        // var a = { length: 2, 0: 'aaa', 1: 'bbb' };
+        // var b=Array.from(a);
+        // console.log(b);//将对象转化为数组
+
+
+        // var arr = [1, 2, { name: "张三" }]
+        // var b=arr.includes(2)
+        // var c=arr.includes(4)
+        // var d=arr.includes({ name: "张三" })
+        // console.log(b,c,d);
+        //检查数组当中是否有某元素
+
+        // var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        // arr.sort(() => Math.random() - 0.5)
+        // console.log(arr);
+        //数组乱序排列
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
